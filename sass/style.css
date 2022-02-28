@@ -726,7 +726,7 @@ a {
 }
 
 .fv {
-  background-image: url(../assets/images/fv.jpg);
+  background-image: url(../images/fv.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1002,7 +1002,7 @@ a {
 }
 
 .price {
-  background-image: url(../assets/images/price.png);
+  background-image: url(../images/price.png);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 900px;
@@ -1527,7 +1527,7 @@ a {
 }
 
 .footer-cta {
-  background-image: url(../assets/images/cta.png);
+  background-image: url(../images/cta.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -2530,16 +2530,16 @@ a {
   font-weight: bold;
 }
 .jumbotron--plan {
-  background-image: url(../assets/images/plan.png);
+  background-image: url(../images/plan.png);
 }
 .jumbotron--blog {
-  background-image: url(../assets/images/blog.png);
+  background-image: url(../images/blog.png);
 }
 .jumbotron--news {
-  background-image: url(../assets/images/news.png);
+  background-image: url(../images/news.png);
 }
 .jumbotron--cta {
-  background-image: url(../assets/images/cta.png);
+  background-image: url(../images/cta.png);
 }
 
 .breadcrumb__inner {

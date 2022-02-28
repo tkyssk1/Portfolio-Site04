@@ -13,15 +13,15 @@
         @include g.titleFont();
     }
     &--plan {
-        background-image: url(../assets/images/plan.png);
+        background-image: url(../images/plan.png);
     }
     &--blog {
-        background-image: url(../assets/images/blog.png);
+        background-image: url(../images/blog.png);
     }
     &--news {
-        background-image: url(../assets/images/news.png);
+        background-image: url(../images/news.png);
     }
     &--cta {
-        background-image: url(../assets/images/cta.png);
+        background-image: url(../images/cta.png);
     }
 }
