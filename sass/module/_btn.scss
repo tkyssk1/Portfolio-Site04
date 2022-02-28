@@ -1,0 +1,29 @@
+@use "../global" as g;
+
+.btn {
+    display: inline-block;
+    width: 137px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    &--primary-color {
+        background-color: g.$primary-color;
+    }
+    
+    &--secondary-color {
+        background-color: g.$secondary-color;
+    }
+
+    &--submit {
+        background-color: g.$secondary-color;
+        margin: 30px auto 0;
+        width: 200px;
+        font-size: 1.6rem;
+    }
+    
+}
+

@@ -1,0 +1,28 @@
+@use "../global" as g;
+
+// PCのときのみ改行
+.pc {
+  display: block;
+  @include g.mq(lg) {
+    display: none;
+  }
+}
+// タブレットのサイズまで改行
+.tb {
+  display: block;
+  @include g.mq(md) {
+    display: none;
+  }
+}
+// スモールサイズのみ改行
+.sp-only {
+  display: none;
+  @include g.mq(sm) {
+    display: block;
+  }
+}
+
+
+.noscroll{
+  overflow: hidden;
+}

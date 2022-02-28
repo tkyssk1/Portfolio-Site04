@@ -1,0 +1,13 @@
+@use "../global" as g;
+
+.footer {
+    &__inner {
+        margin-top: 121px;
+        @include g.mq(md) {
+            margin-top: 65px;
+        }
+    }
+    &__inner2 {
+        margin-top: 63px;
+    }
+}

@@ -1,0 +1,45 @@
+@use "../global" as g;
+
+.sv-emphasize {
+    display: inline-block;
+    max-width: 900px;
+    width: 100%;
+    height: 248px;
+    padding: 11px 16px;
+    background-color: #fff;
+    color: g.$main-font-color;
+    @include g.mq(md) {
+     height: auto;
+    }
+    &__box {
+        max-width: 868px;
+        height: 225px;
+        border: 5px solid g.$secondary-color;
+        text-align: center;
+        @include g.mq(md) {
+         height: auto;
+         padding: 10px;
+        }
+    }
+    &__title {
+        margin-top: 24px;
+        font-size: 3.6rem;
+        font-weight: 600;
+        line-height: calc(50 / 36);
+        @include g.mq(md) {
+            margin-top: 0;
+            font-size: 2.4rem
+        }
+    }
+    &__marker {
+        background:linear-gradient(transparent 70%, g.$primary-color 70%);
+    }
+    &__text {
+        margin-top: 14px;
+        font-size: 1.8rem;
+        line-height: calc(24 / 18);
+        @include g.mq(md) {
+            font-size: 1.2rem
+        }
+    }
+}

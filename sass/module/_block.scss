@@ -1,0 +1,74 @@
+@use "../global" as g;
+
+.block {
+    display: flex;
+    justify-content: left;
+    height: auto;
+    line-height: 64px;
+    background-color: #f8f8f8;
+    &__num {
+        width: calc(65 / 900) *100%;
+        text-align: center;
+        background-color: g.$primary-color;
+        font-weight: 600;
+        color: #fff;
+        @include g.mq(sm) {
+            font-size: 1.0rem;
+        }
+    }
+    &__item{
+        width: calc(835 / 900) *100%;
+        display: flex;
+        justify-content: left;
+        @include g.mq(md) {
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1;
+        }
+    }
+    &__title {
+        width: (215 / 835) *100%;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding-left: calc(21 / 835) *100%;
+        padding-right: 1%;
+        position: relative;
+        @include g.mq(lg) {
+            font-size: 1.6rem;
+        }
+        @include g.mq(md) {
+            font-size: 1.4rem;
+            width: 100%;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            background-color: #C3C3C3;
+            width: 1px;
+            height: 30px;
+            top: 16px;
+            right: 0px;
+            @include g.mq(md) {
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+    &__text {
+        width: calc(620.5 / 835 ) *100%;
+        font-size: 1.6rem;
+        padding-left: calc(53.5 / 835) *100%;
+        padding-right: calc(53.5 / 835) *100%;
+        @include g.mq(lg) {
+            font-size: 1.4rem;
+        }
+        @include g.mq(md) {
+            width: 100%;
+            padding-left: calc(21 / 835) *100%;
+            padding-right: calc(21 / 835) *100%;
+            margin-top: 5px;
+            font-size: 1.2rem;
+        }
+    }
+}

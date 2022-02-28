@@ -1,0 +1,63 @@
+@use "../global" as g;
+
+.hamburger-btn {
+    display: none;
+    @include g.mq(lg) {
+        display: block;
+        &__inner {
+            width: 60px;
+            height: 60px;
+            border: 1px solid g.$secondary-color;
+            border-radius: 50%;
+            margin-right: 20px;
+            position: relative;
+            z-index: 30;
+            @include g.mq(md) {
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+            }
+        }
+        &__bar {
+            display: inline-block;
+            background-color: g.$secondary-color;
+            width: 30px;
+            @include g.mq(md) {
+                width: 20px;
+            }
+            height: 2px;
+            transition: 0.5s;
+
+            &:nth-of-type(1) {
+                @include g.cc();
+                top: 30%;
+            }
+            &:nth-of-type(2) {
+                @include g.cc();
+            }
+            &:nth-of-type(3) {
+                @include g.cc();
+                top: 70%;
+            }
+        }
+        // 押下時
+        &--open {
+            transition: 0.5s;
+            .hamburger-btn__bar {
+                &:nth-last-of-type(1) {
+                    transform: rotate(45deg);
+                    top: 50%;
+                    left: 25%;
+                }
+                &:nth-last-of-type(2) {
+                    opacity: 0;
+                }
+                &:nth-last-of-type(3) {
+                    transform: rotate(-45deg);
+                    top: 50%;
+                    left: 25%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="％ページの紹介文が入ります％">
+  <meta property="og:title" content="％SNSに表示されるページのタイトルが入ります％">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="％サイト名が入ります％">
+  <meta property="og:description" content="％SNSに表示されるページの紹介文が入ります％">
+  <meta property="og:url" content="https://○○○○○○○○">
+  <meta property="og:image" content="https://○○○○○○○○/ogp.png">
+  <meta name="twitter:title" content="％twitterでシェアされたときのタイトル％">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- title -->
+  <title>Engress</title>
+  <!-- css -->
+  <link href="./sass/style.css" rel="stylesheet">
+  <!-- googlefont -->
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <header class="header">
+    <div class="bg-cover"></div>
+    <!-- bg-cover -->
+    <div class="header__inner">
+      <div class="header__left">
+        <figure class="header__logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" alt="logo" class="header__logo-image">
+          </a>
+        </figure>
+        <!-- /.header__logo -->
+        <nav class="header-nav header-nav">
+          <ul class="header-nav__items">
+            <li class="header-nav__item"><a href="./" class="header-nav__link">ホーム</a></li>
+            <li class="header-nav__item"><a href="./info.html" class="header-nav__link">お知らせ</a></li>
+            <li class="header-nav__item"><a href="./blog.html" class="header-nav__link">ブログ</a></li>
+            <li class="header-nav__item"><a href="./price.html" class="header-nav__link">コース・料金</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.header__left -->
+      <div class="header__right">
+        <div class="header__right-info">
+          <div class="header__hours">
+            平日08:00~20:00
+          </div>
+          <div class="header__tel tel">
+            <svg class="tel__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="14.714"
+              viewBox="0 0 10 14.714">
+              <path id="パス_16" data-name="パス 16"
+                d="M90.212,26.578c2.726,5.2,5.788,5.731,6.678,5.264l.232-.122-2.085-3.975-.233.12c-.718.377-1.435-.711-2.353-2.462s-1.406-2.959-.689-3.336l.232-.123L89.909,17.97l-.232.122C88.786,18.559,87.486,21.383,90.212,26.578Zm8.171,4.481c.344-.18.155-.576-.041-.949l-1.4-2.67c-.151-.287-.4-.449-.6-.343-.126.066-.421.206-.8.394l2.081,3.967Zm-5.114-9.818c.2-.105.209-.4.059-.69s-1.4-2.67-1.4-2.67c-.2-.373-.413-.753-.758-.572l-.761.4,2.081,3.967C92.86,21.47,93.142,21.307,93.269,21.241Z"
+                transform="translate(-88.574 -17.262)" fill="#1B224C" />
+            </svg>
+            <span class="tel__num">0123-456-7890</span>
+          </div>
+        </div>
+        <button class="header__btn"><a href="./contact.html" class="btn btn--primary-color">資料請求</a></button>
+        <button class="header__btn"><a href="./contact.html" class="btn btn--secondary-color">お問い合わせ</a></button>
+      </div>
+      <!-- /.header__right -->
+      <!-- ハンバーガーボタン -->
+      <button class="hamburger-btn">
+        <div class="hamburger-btn__inner">
+          <span class="hamburger-btn__bar"></span>
+          <span class="hamburger-btn__bar"></span>
+          <span class="hamburger-btn__bar"></span>
+        </div>
+      </button>
+      <!-- /.hamburger-btn -->
+    </div>
+    <!-- /.header__inner -->
+  </header>
+  <!-- /.header -->
+
+  <section class="jumbotron jumbotron--cta">
+    <div class="jumbotron__inner">
+      <h1 class="jumbotron__title">
+        お問い合わせ・資料請求
+      </h1>
+    </div>
+  </section>
+  <!-- /.jumbotron -->
+
+  <div class="breadcrumb">
+    <div class="breadcrumb__inner"></div>
+  </div>
+  <!-- /.breadcrumb -->
+
+  <main>
+    <section class="contact">
+      <div class="l-inner">
+        <div class="contact__inner">
+          <div class="contact__text">弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。</div>
+          <form action="" class="contact__form form">
+            <div class="form__item input-block">
+              <label for="company" class="form__text">会社名</label>
+              <input type="text" class="form__input" id="company" placeholder="Engress">
+            </div>
+            <!-- /.form__company -->
+            <div class="form__item input-block">
+              <label for="name" class="form__text">氏名</label>
+              <input type="text" class="form__input" id="name" placeholder="田中　太郎">
+            </div>
+            <!-- /.form__name -->
+            <div class="form__item input-block">
+              <label for="email" class="form__text">メールアドレス</label>
+              <input type="text" class="form__input" id="email" placeholder="example@example.com">
+            </div>
+            <!-- /.form__email -->
+            <div class="form__item input-block">
+              <label for="tel" class="form__text">電話番号</label>
+              <input type="text" class="form__input" id="tel" placeholder="01-2345-6789">
+            </div>
+            <!-- /.form__tel -->
+            <div class="form__item radio-block">
+              <label for="" class="form__text">お問い合わせの種類を選択してください（<b>資料請求の方は資料請求を選択ください</b>）</label>
+              <ul class="radio-block__items">
+                <li class="radio-block__item">
+                  <input type="radio" class="radio-block__mark-hidden" id="a" name="contact-type">
+                  <label for="a" class="form__text radio-block__mark-original">商品のご相談</label>
+                </li>
+                <li class="radio-block__item">
+                  <input type="radio" class="radio-block__mark-hidden" id="b" name="contact-type">
+                  <label for="b" class="form__text radio-block__mark-original">サービスに関するお問い合わせ</label>
+                </li>
+                <li class="radio-block__item">
+                  <input type="radio" class="radio-block__mark-hidden" id="c" name="contact-type">
+                  <label for="c" class="form__text radio-block__mark-original">資料請求</label>
+                </li>
+                <li class="radio-block__item">
+                  <input type="radio" class="radio-block__mark-hidden" id="d" name="contact-type">
+                  <label for="d" class="form__text radio-block__mark-original">その他</label>
+                </li>
+              </ul>
+            </div>
+            <!-- /.radio-block -->
+            <div class="form__textarea-block textarea-block">
+                <label for="comment" class="form__text">お問い合わせ内容</label>
+                <textarea id="comment" class="form__textarea" name="your-comment" placeholder="入力してください"></textarea>
+            </div>
+            <!-- /.form__comment -->
+            <div class="form__policy-block policy-block">
+              <p class="form__text"><a href="#" class="policy-block__atag">プライバシーポリシー</a>に同意の上、送信ください。</p>
+              <div class="policy-block__check">
+                <input type="checkbox" class="policy-block__mark-hidden" id="policy">
+                <label for="policy" class="policy-block__mark-original">プライバシーポリシーに合意する</label>
+              </div>
+            </div>
+            <button class="form__button">
+              <input type="submit" class="btn btn--submit" value="送信する">
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__inner2">
+
+      <div class="footer-cta">
+        <div class="footer-cta__inner">
+          <div class="footer-cta__title">
+            まずは無料で資料請求から
+          </div>
+          <button class="footer-cta__btn">
+            <a href="#" class="rounded-btn rounded-btn--primary-color rounded-btn--elongate">資料請求</a>
+          </button>
+          <a href="#" class="footer-cta__inquiry">お問い合わせ</a>
+        </div>
+      </div>
+      <!-- /.footer-cta -->
+
+      <div class="footer-tel">
+        <div class="footer-tel__inner l-inner">
+          <div class="footer-tel__text">お電話でのお問い合わせはこちら</div>
+          <div class="footer-tel__num">0123-456-7890</div>
+          <div class="footer-tel__hours">平日 08:00~20:00</div>
+        </div>
+      </div>
+      <!-- /.footer-tel -->
+
+      <div class="footer-main">
+        <div class="footer-main__inner l-inner">
+          <nav class="footer-main__left">
+            <ul class="footer-nav">
+              <li class="footer-nav__item"><a href="./" class="footer-nav__link">ホーム</a></li>
+              <li class="footer-nav__item"><a href="./info.html" class="footer-nav__link">お知らせ</a></li>
+              <li class="footer-nav__item"><a href="./blog.html" class="footer-nav__link">ブログ</a></li>
+              <li class="footer-nav__item"><a href="./price.html" class="footer-nav__link">コース・料金</a></li>
+            </ul>
+          </nav>
+          <div class="footer-main__right">
+            <div class="footer-main__logo-wrapper">
+              <img class="footer-main__logo" src="./images/logo.png" alt="">
+            </div>
+            <div class="footer-main__tel">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14.714" viewBox="0 0 10 14.714">
+                <path id="パス_16" data-name="パス 16"
+                  d="M90.212,26.578c2.726,5.2,5.788,5.731,6.678,5.264l.232-.122-2.085-3.975-.233.12c-.718.377-1.435-.711-2.353-2.462s-1.406-2.959-.689-3.336l.232-.123L89.909,17.97l-.232.122C88.786,18.559,87.486,21.383,90.212,26.578Zm8.171,4.481c.344-.18.155-.576-.041-.949l-1.4-2.67c-.151-.287-.4-.449-.6-.343-.126.066-.421.206-.8.394l2.081,3.967Zm-5.114-9.818c.2-.105.209-.4.059-.69s-1.4-2.67-1.4-2.67c-.2-.373-.413-.753-.758-.572l-.761.4,2.081,3.967C92.86,21.47,93.142,21.307,93.269,21.241Z"
+                  transform="translate(-88.574 -17.262)" fill="#fff" />
+              </svg>
+              0123-456-7890
+            </div>
+            <div class="footer-main__hours">
+              平日08:00~20:00
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //footer-main -->
+      <div class="footer-copyright l-inner">
+        <small>&copy; 2022 Tabow.</small>
+      </div>
+      
+    </div>
+    <!-- /.footer__inner -->
+  </footer>
+  <!-- //footer -->
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</html>

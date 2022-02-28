@@ -1,0 +1,17 @@
+@use "../global" as g;
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  color: g.$main-font-color;
+  font-family: g.$main-font-family;
+}
+
+a {
+  text-decoration: none;
+}

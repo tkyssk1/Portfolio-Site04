@@ -1,0 +1,41 @@
+// foundation/_base.scss
+@use "../global" as g;
+
+.rounded-btn {
+    display: inline-block;
+    width: 260px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    @include g.mq(md) {
+        font-size: 1.2rem;
+    }    
+    &--primary-color {
+        background-color: g.$primary-color;
+    }
+    &--secondary-color {
+        background-color: g.$secondary-color;
+    }
+    &--wire{
+        border: 1px solid #fff;
+    }
+    &--small{
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.6rem;
+        @include g.mq(md) {
+            font-size: 1.2rem;
+        }    
+    }
+    &--elongate{
+        width: 280px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+

@@ -1,0 +1,58 @@
+@use "../global" as g;
+
+.price-structure {
+    &__inner {
+        padding-top: 63px;
+    }
+    &__title {
+        @include g.titleFont();
+        color: g.$secondary-color;
+        text-align: center;
+    }
+    &__system {
+        display: flex;
+        justify-content: center;
+        margin-top: 53px;
+    }
+    &__block {
+        width: 280px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        background-color: g.$secondary-color;
+        color: #fff;
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    &__char {
+        position: relative;
+        width: 98px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // 横線
+            width: 25px;
+            height: 2px;
+            background: g.$secondary-color;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*縦線*/
+            width: 2px;
+            height: 25px;
+            background: g.$secondary-color;
+        }
+    }
+    &__text {
+        font-size: 1.6rem;
+        margin-top: 46px;
+        letter-spacing: calc(21 / 16);
+    }
+}

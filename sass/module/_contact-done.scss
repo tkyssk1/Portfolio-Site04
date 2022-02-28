@@ -1,0 +1,21 @@
+@use "../global" as g;
+
+.contact-done {
+    &__inner {
+        max-width: 700px;
+        width: 100%;
+        margin: 87px auto 0;
+        text-align: center;
+    }
+    &__text {
+        font-size: 1.6rem;
+        line-height: calc(21 / 16);
+    }
+    &__home {
+        margin-top: 92px;
+        margin-bottom: 83px;
+    }
+    &__atag{
+        text-decoration: underline;
+    }
+}

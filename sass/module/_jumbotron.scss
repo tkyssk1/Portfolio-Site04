@@ -1,0 +1,27 @@
+@use "../global" as g;
+
+.jumbotron {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &__inner {
+        position: relative;
+        height: 221px;
+    }
+    &__title {
+        @include g.cc();
+        @include g.titleFont();
+    }
+    &--plan {
+        background-image: url(../assets/images/plan.png);
+    }
+    &--blog {
+        background-image: url(../assets/images/blog.png);
+    }
+    &--news {
+        background-image: url(../assets/images/news.png);
+    }
+    &--cta {
+        background-image: url(../assets/images/cta.png);
+    }
+}

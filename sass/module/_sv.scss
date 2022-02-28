@@ -1,0 +1,58 @@
+@use "../global" as g;
+
+.sv {
+    background-color: #1B224C;
+    width: 100%;
+    height: 604px;
+    @include g.mq(md) {
+        height: 500px;
+    }
+    &__inner{
+        color: g.$sub-font-color;
+        text-align: center;
+        padding-top: 68px;
+        padding-bottom: 54px;
+    }
+    &__title{
+        font-size: 3.6rem;
+        font-weight: 600;
+        @include g.mq(md) {
+            font-size: 2.4rem
+        }
+        @include g.mq(sm) {
+            font-size: 1.8rem;
+        }
+    }
+    &__worries{
+        display: flex;
+        justify-content: center;
+        margin-top: 43px;
+        @include g.mq(md) {
+         flex-direction: column;
+         margin-right: 0px;
+        }
+    }
+    &__worries-item{
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 2.16;
+        margin-right: 50px;
+        &:last-child{
+            margin-right: 0px;
+        }
+        @include g.mq(md) {
+            font-size: 1.2rem;
+            margin-right: 0px;
+        }
+    }
+    &__emphasize{
+        margin-top: 72px;
+        @include g.mq(lg) {
+            margin-top: 35px;
+        }
+        @include g.mq(sm) {
+            font-size: 1.5rem;
+        }
+    }
+}

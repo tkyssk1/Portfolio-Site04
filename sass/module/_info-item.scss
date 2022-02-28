@@ -1,0 +1,28 @@
+@use "../global" as g;
+
+.info-item {
+    height: 90px;
+    @include g.mq(md) {
+        height: auto;
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+    }
+    &__date {
+        font-size: 1.2rem;
+        @include g.mq(md) {
+            font-size: 1rem;
+        }
+    }
+    &__title {
+        font-size: 1.6rem;
+        text-decoration: underline;
+        margin-top: 15px;
+        line-height: calc(21 / 16);
+        @include g.mq(md) {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+    }
+}

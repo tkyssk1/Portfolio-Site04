@@ -1,0 +1,12 @@
+@use "../global" as g;
+
+.twocol-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 96px;
+    @include g.mq(md) {
+        flex-direction: column;
+        padding-top: 65px;
+    }
+
+}

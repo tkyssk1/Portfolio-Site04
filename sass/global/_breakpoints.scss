@@ -1,0 +1,18 @@
+$breakpoints: (
+
+  // スマホ(320~374px)
+  'sm': 'screen and (max-width: 374px)',
+  // 大きめのスマホ(375~767px)
+  'md': 'screen and (max-width: 767px)',
+  // タブレット(768~1024px)
+  'lg': 'screen and (max-width: 1024px)',
+  //  PC
+  'xl': 'screen and (max-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+

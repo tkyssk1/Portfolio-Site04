@@ -1,0 +1,28 @@
+@use "../global" as g;
+
+.success-ex{
+    background-color: #1B224C;
+    margin-top: 39px;
+    width: 100%;
+    padding-bottom: 60px;
+    &__inner{
+        padding-top: 65px;
+        color: #fff;
+    }
+    &__title{
+        font-size: 3.6rem;
+        font-weight: 600;
+        text-align: center;
+        @include g.mq(md) {
+            font-size: 2.4rem;
+        }
+
+    }
+    &__cards{
+        margin-top: 124px;
+        @include g.mq(md) {
+            font-size: 40px;
+            margin-top: 45px;
+        }
+    }
+}

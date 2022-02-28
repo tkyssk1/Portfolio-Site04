@@ -1,0 +1,17 @@
+@use "../global" as g;
+
+.side-item {
+    &__link {
+        display: flex;
+
+    }
+    &__img {
+        margin-right: 17px;
+        width: calc(100 / 270) * 100%;
+    }
+    &__text {
+        line-height: calc(24 / 12);
+        width: calc(152 / 270) * 100%;
+        font-size: 1.2rem;
+    }
+}

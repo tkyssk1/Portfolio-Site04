@@ -1,0 +1,11 @@
+@use "../global" as g;
+
+.blog-recommend{
+    &__title{
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: g.$main-font-color;
+        margin-top: 62px;
+        margin-bottom: 30px;
+    }
+}

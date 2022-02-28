@@ -1,0 +1,39 @@
+@use "../global" as g;
+
+.side-category {
+    &__block {
+        text-align: center;
+        color: #fff;
+        background-color: g.$secondary-color;
+        height: 63px;
+        line-height: 63px;
+        font-size: 2.1rem;
+        font-weight: bold;
+        margin-top: 45px;
+    }
+    &__lists {
+        margin-top: 25px;
+    }
+    &__list {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-top: 8px;
+        &:first-of-type{
+            margin-top: 0;
+        }
+        position: relative;
+        padding-left: 20px;
+        line-height: calc(24 / 16);
+        &:before {
+            content: "";
+            background-color: g.$secondary-color;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 6%;
+            transform: translateY(-50%);
+        }
+    }
+}

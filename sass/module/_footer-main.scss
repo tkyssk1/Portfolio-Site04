@@ -1,0 +1,57 @@
+@use "../global" as g;
+
+.footer-main {
+    background-color: g.$secondary-color;
+    color: #fff;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+        padding-bottom: 65px;
+        @include g.mq(md) {
+            padding-bottom: 40px;
+        }
+    }
+    &__left{
+        margin-top: 16px;
+        @include g.mq(md) {
+            margin-top: 0px;
+            margin-left: 3%;
+            font-size: 1.2rem;
+        }
+    }
+    &__logo-wrapper{
+        width: 197px;
+        height: 58px;
+        background-color: #fff;
+        position: relative;
+        @include g.mq(md) {
+            width: 150px;
+            height: 40px;
+        }
+    }
+    &__logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(159 / 197) *100%;
+    }
+    &__tel{
+        font-weight: 600;
+        padding-top: 24px;
+        text-align: right;
+        @include g.mq(md) {
+            padding-top: 22px;
+            font-size: 1.2rem;
+        }
+    }
+    &__hours{
+        font-size: 1.2rem;
+        padding-top: 9px;
+        text-align: right;
+        @include g.mq(md) {
+            font-size: 1.0rem;
+        }
+    }
+}

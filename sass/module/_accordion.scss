@@ -1,0 +1,62 @@
+@use "../global" as g;
+
+.accordion {
+    &__title {
+        cursor: pointer;
+        padding-top: 30px;
+        padding-bottom: 24.5px;
+        padding-right: 60px;
+        border-top: 1px solid g.$secondary-color;
+        font-size: 1.6rem;
+        position: relative;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            transition: all .3s;
+            // 横線
+            width: 25px;
+            height: 3px;
+            background: #1B224C;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            /* 8px+12px-1px(幅2pxの半分) */
+            right: 31px;
+            transform: translateY(-50%);
+            transition: all .3s;
+            /*縦線*/
+            width: 3px;
+            height: 25px;
+            background: #1B224C;
+        }
+        &--open{
+            // padding-bottom: 15.5px;
+            &:before{
+                top:55%
+            }
+            &:after{
+                top: 25%;
+                transform: rotate(90deg);
+                opacity: 0;
+            }
+        }
+    }
+    &__text {
+        margin-bottom: 14px;
+        padding: 19px 26px 21px;
+        background-color: #f8f8f8;
+        font-size: 1.6rem;
+        display: none;
+        &--open{
+            display: block;
+        }
+    }
+}

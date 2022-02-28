@@ -1,0 +1,9 @@
+@use "../global" as g;
+
+.single-main{
+    max-width: 590px;
+    width: 100%;
+    &__reccomend{
+        margin-top: 60px;
+    }
+}

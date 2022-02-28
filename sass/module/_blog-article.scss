@@ -1,0 +1,116 @@
+@use "../global" as g;
+
+.blog-article {
+    &__inner {
+    }
+    &__category {
+        display: inline-block;
+        padding: 10px 25px;
+        text-align: center;
+        color: #fff;
+        background-color: g.$secondary-color;
+        font-size: 1.2rem;
+    }
+    &__title {
+        margin-top: 30px;
+    }
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 34px;
+    }
+    &__sms {
+        display: flex;
+    }
+    &__date {
+        font-size: 1.6rem;
+    }
+    &__img-block {
+        margin-top: 22px;
+        width: 100%;
+        height: auto;
+    }
+    &__img{
+        height: 370px;
+    }
+
+    // フォント指定
+    h1 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: g.$main-font-color;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: g.$main-font-color;
+        margin-top: 45px;
+        margin-bottom: 23px;
+    }
+    h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: g.$main-font-color;
+        border-left: 3px solid g.$main-font-color;
+        padding-left: 10px;
+        margin-top: 45px;
+        margin-bottom: 23px;
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: g.$main-font-color;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: calc(24 / 16);
+        a {
+            text-decoration: underline;
+            color: g.$primary-color;
+            font-size: 1.8rem;
+        }
+    }
+
+    blockquote {
+        position: relative;
+        padding: 10px 26px 10px 75px;
+        box-sizing: border-box;
+        font-style: italic;
+        background: #efefef;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    blockquote:before {
+        display: inline-block;
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        content: "“";
+        color: #cfcfcf;
+        font-size: 9rem;
+        font-weight: 900;
+    }
+
+    ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    li {
+        position: relative;
+        padding-left: 35px;
+        font-size: 1.6rem;
+        line-height: calc(24 / 16);
+        &:before {
+            content: "";
+            background-color: g.$primary-color;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            transform: translateY(-50%);
+        }
+    }
+}

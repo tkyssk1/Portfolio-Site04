@@ -1,0 +1,51 @@
+@use "../global" as g;
+
+.price-plan{
+    width: 100%;
+
+    &__name{
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border: 1px solid g.$secondary-color;
+        background-color: g.$secondary-color;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 600;
+        &--recommend{
+            height: 96px;
+            line-height: 48px;
+            border: 1px solid g.$primary-color;
+            background-color: g.$primary-color;
+            &:before{
+                content: "おすすめ\A";
+                white-space: pre;
+            }
+        }
+    }
+    &__container{
+        height: 414px;
+        border: 1px solid g.$secondary-color;
+    }
+    &__price{
+        margin-top: 34px;
+        color: g.$secondary-color;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+        &--recommend{
+            color: g.$primary-color;
+        }
+    }
+    &__price-text{
+        margin-top: 8px;
+        color: g.$secondary-color;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    &__lists{
+        margin-top: 46px;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}

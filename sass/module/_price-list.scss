@@ -1,0 +1,18 @@
+@use "../global" as g;
+
+.price-list{
+    &__inner{
+        padding-top: 112px;
+    }
+    &__title{
+        @include g.titleFont();
+        color: g.$secondary-color;
+        text-align: center;
+    }
+    &__plans{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 62px;
+    }
+}

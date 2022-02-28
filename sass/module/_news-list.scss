@@ -1,0 +1,16 @@
+@use "../global" as g;
+
+.news-list{
+    &__inner{
+        padding-top: 63px;
+    }
+    &__title{
+        @include g.titleFont();
+        color: g.$secondary-color;
+        text-align: center;
+    }
+    &__items{
+        margin-top: 36px;
+        border-top: 1px solid #D5D5D5;
+    }
+}

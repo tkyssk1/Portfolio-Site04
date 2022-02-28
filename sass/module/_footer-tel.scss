@@ -1,0 +1,41 @@
+@use "../global" as g;
+
+.footer-tel {
+    height: auto;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 22px;
+        @include g.mq(md) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__text {
+        font-size: 1.6rem;
+        padding-left: 0px;
+        padding-top: 18px;
+        padding-right: 20px;
+        @include g.mq(md) {
+            padding: 0;
+        }
+    }
+    &__num {
+        font-size: 3.6rem;
+        font-weight: 600;
+        color: g.$secondary-color;
+        @include g.mq(md) {
+            padding-top: 10px;
+        }
+    }
+    &__hours {
+        font-size: 1.6rem;
+        padding-top: 18px;
+        padding-left: 20px;
+        @include g.mq(md) {
+            padding: 0;
+            padding-top: 10px;
+        }
+    }
+}

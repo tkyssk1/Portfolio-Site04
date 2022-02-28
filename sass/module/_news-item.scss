@@ -1,0 +1,18 @@
+@use "../global" as g;
+
+.news-item {
+    height: 64px;
+    line-height: 64px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #D5D5D5;
+
+    &__atag{
+        display: flex;
+    }
+    &__date{
+        margin-right: 52px;
+    }
+    &__title{
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,25 @@
+@use "../global" as g;
+
+.price-checklists {
+    &__list {
+        position: relative;
+        display: inline-block;
+        margin-top: 21px;
+        padding-left: 25px;
+        padding-right: 25px;
+        &:first-of-type{
+            margin-top: 0px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            width: 10px;
+            height: 5px;
+            border-left: 2px solid g.$secondary-color;
+            border-bottom: 2px solid g.$secondary-color;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+}

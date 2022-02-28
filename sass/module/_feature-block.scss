@@ -1,0 +1,12 @@
+@use "../global" as g;
+
+.feature-block {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: g.$primary-color;
+    color: #fff;
+    text-align: center;
+}

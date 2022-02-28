@@ -1,0 +1,66 @@
+@use "../global" as g;
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    transition: 0.5s;
+    position: relative;
+    &--bg-change {
+        position: fixed;
+        z-index: 10;
+        transition: 0.5s;
+        background-color: #ddd;
+    }
+    &__inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        // transformを使っているとスタックコンテキストが発動
+        transform: translate(-50%, -50%);
+        // そのため、z-indexをbg-coverより大きく設定
+        z-index: 20;
+        max-width: 1280px;
+        width: 100%;
+        height: 100%;
+        padding-right: 10px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 30px;
+    }
+    &__logo-image {
+        width: 136px;
+    }
+    &__right {
+        display: flex;
+        @include g.mq(lg) {
+            display: none;
+        }
+    }
+    &__right-info {
+        padding-right: 13px;
+        text-align: right;
+    }
+    &__hours {
+        padding-top: 12px;
+        font-size: 1.2rem;
+    }
+    &__tel {
+        padding-top: 7px;
+        font-weight: 600;
+    }
+    &__btn {
+        margin-left: 13px;
+    }
+}

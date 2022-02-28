@@ -1,0 +1,18 @@
+@use "../global" as g;
+
+.blog-list{
+    &__inner{
+        padding-top: 63px;
+    }
+    &__title{
+        @include g.titleFont();
+        color: g.$secondary-color;
+        text-align: center;
+    }
+    &__items{
+        margin-top: 53px;
+    }
+    &__item{
+        margin-top: 61px;
+    }
+}

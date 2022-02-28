@@ -1,0 +1,16 @@
+@use "../global" as g;
+
+.contact {
+    &__inner {
+        max-width: 700px;
+        width: 100%;
+        margin: 58px auto 0;
+    }
+    &__text {
+        font-size: 1.6rem;
+        line-height: calc(21 / 16);
+    }
+    &__form {
+        margin-top: 52px;
+    }
+}

@@ -1,0 +1,58 @@
+@use "../global" as g;
+
+.radio-block {
+    &__items {
+        margin-top: 20px;
+    }
+    &__item {
+        margin-top: 13px;
+    }
+    // デフォルトのラジオボタンを削除
+    &__mark-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+    // オリジナルのラジオボタンを用意
+    &__mark-original {
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        //
+        &::before {
+            content: "";
+            display: block;
+            background-color: #fff;
+            border: 1px solid #333333;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin-right: 17px;
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: #333333;
+            border-radius: 50%;
+            opacity: 0;
+            width: 12px;
+            height: 12px;
+            left: 4px;
+            transition: 0.3s;
+        }
+    }
+    // チェックされたチェックボックスを表示
+    &__mark-hidden:checked + &__mark-original::after {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,23 @@
+@use "../global" as g;
+
+.price{
+    background-image: url(../assets/images/price.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 900px;
+    width: 100%;
+    height: 217px;
+    padding-top: 60px;
+    text-align: center;
+    &__title{
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: #fff;
+        @include g.mq(md) {
+            font-size: 1.8rem;
+        }    
+    }
+    &__btn{
+        margin-top: 24px;
+    }
+}

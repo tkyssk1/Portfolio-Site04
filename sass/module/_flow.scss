@@ -1,0 +1,20 @@
+@use "../global" as g;
+
+.flow{
+    &__inner{
+        padding-top: 65px;
+    }
+    &__title{
+        font-size: 3.6rem;
+        font-weight: 600;
+        text-align: center;
+        @include g.mq(md) {
+            font-size: 2.4rem;
+        }
+    }
+    &__blocks{
+        max-width: 900px;
+        width: 100%;
+        margin-top: 30px;
+    }
+}

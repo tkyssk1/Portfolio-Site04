@@ -1,0 +1,31 @@
+@use "../global" as g;
+
+.footer-cta {
+    background-image: url(../assets/images/cta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    color: #fff;
+    &__inner {
+        padding-top: 74px;
+        padding-bottom: 40px;
+    }
+    &__title {
+        font-size: 3.2rem;
+        font-weight: 600;
+        @include g.mq(md) {
+            font-size: 2.1rem;
+        }
+    }
+    &__btn {
+        margin: 14px auto 23px;
+        display: block;
+    }
+    &__inquiry{
+        text-decoration: underline;
+        @include g.mq(md) {
+            font-size: 1.2rem;
+        }
+    }
+}
