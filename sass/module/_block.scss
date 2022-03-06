@@ -7,13 +7,17 @@
     line-height: 64px;
     background-color: #f8f8f8;
     &__num {
-        width: calc(65 / 900) *100%;
+        width: 64px;
         text-align: center;
         background-color: g.$primary-color;
         font-weight: 600;
         color: #fff;
+        @include g.mq(md) {
+            width: 60px;
+        }
         @include g.mq(sm) {
-            font-size: 1.0rem;
+            font-size: 1.2rem;
+            width: 40px;
         }
     }
     &__item{
@@ -59,14 +63,12 @@
         width: calc(620.5 / 835 ) *100%;
         font-size: 1.6rem;
         padding-left: calc(53.5 / 835) *100%;
-        padding-right: calc(53.5 / 835) *100%;
         @include g.mq(lg) {
             font-size: 1.4rem;
         }
         @include g.mq(md) {
             width: 100%;
             padding-left: calc(21 / 835) *100%;
-            padding-right: calc(21 / 835) *100%;
             margin-top: 5px;
             font-size: 1.2rem;
         }

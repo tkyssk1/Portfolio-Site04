@@ -11,6 +11,8 @@
     &__title {
         @include g.cc();
         @include g.titleFont();
+        width: 100%;
+        text-align: center;
     }
     &--plan {
         background-image: url(../images/plan.png);

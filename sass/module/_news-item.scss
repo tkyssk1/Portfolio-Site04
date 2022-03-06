@@ -3,9 +3,9 @@
 .news-item {
     height: 64px;
     font-size: 1.6rem;
-    border-bottom: 1px solid #D5D5D5;
+    border-bottom: 1px solid #d5d5d5;
     position: relative;
-    &__atag{
+    &__atag {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -15,22 +15,20 @@
             flex-direction: column;
         }
     }
-    &__date{
+    &__date {
         min-width: 86px;
         margin-right: 5%;
         @include g.mq(md) {
             font-size: 1.2rem;
-        }    
+        }
         @include g.mq(sm) {
-            font-size: 1.0rem;
+            font-size: 1rem;
         }
     }
-    &__title{
+    &__title {
         text-decoration: underline;
         @include g.mq(md) {
             margin-top: 7px;
-        }
-        @include g.mq(sm) {
             font-size: 1.2rem;
         }
     }
