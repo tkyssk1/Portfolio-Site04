@@ -1,44 +1,79 @@
 @use "../global" as g;
 
 .blog-l-item {
-    height: 179px;
     &__link {
         display: flex;
     }
     &__img-block {
         position: relative;
-        margin-right: 50px;
+        margin-right: calc(50 / 900) *100%;
+        width: calc(240 / 900) *100%;
+        @include g.mq(md) {
+            width: 30%;
+            margin-right: 5%;
+        }
     }
     &__img-label {
         position: absolute;
-        width: 80px;
+        min-width: 80px;
+        max-width: 100%;
         height: 28px;
         line-height: 28px;
         background-color: g.$secondary-color;
         color: #fff;
         text-align: center;
         font-size: 1.2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        @include g.mq(md) {
+            min-width: 60px;
+            font-size: 1.0rem;
+            height: 20px;
+            line-height: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
     }
     &__img {
-        width: 240px;
-        height: 179px;
+        
+        // height: 179px;
     }
     &__contents {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        width: calc(610 / 900) *100%;
+        @include g.mq(md) {
+            width: 65%;
+        }
     }
     &__date {
         font-size: 1.2rem;
+        @include g.mq(md) {
+            font-size: 1.0rem;
+        }
+
     }
     &__title {
         font-size: 2.6rem;
         font-weight: 600;
         text-decoration: underline;
         line-height: calc(21 / 16);
+        @include g.mq(md) {
+            font-size: 1.6rem;
+        }
+        @include g.mq(sm) {
+            font-size: 1.4rem;
+        }
     }
     &__text {
         font-size: 1.6rem;
         line-height: calc(24 / 16);
+        @include g.mq(md) {
+            font-size: 1.2rem;
+        }
+        @include g.mq(sm) {
+         display: none;   
+        }
     }
 }

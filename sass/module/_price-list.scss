@@ -3,6 +3,9 @@
 .price-list{
     &__inner{
         padding-top: 112px;
+        @include g.mq(md) {
+            padding-top: 80px;
+        }
     }
     &__title{
         @include g.titleFont();
@@ -14,5 +17,8 @@
         justify-content: space-between;
         align-items: flex-end;
         margin-top: 62px;
+        @include g.mq(md) {
+            margin-top: 30px;
+        }
     }
 }

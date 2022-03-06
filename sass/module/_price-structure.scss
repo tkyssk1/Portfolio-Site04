@@ -13,6 +13,12 @@
         display: flex;
         justify-content: center;
         margin-top: 53px;
+        @include g.mq(md) {
+            margin-top: 30px;
+        }
+        @include g.mq(sm) {
+            margin-top: 20px;
+        }
     }
     &__block {
         width: 280px;
@@ -23,6 +29,19 @@
         color: #fff;
         font-size: 2.2rem;
         font-weight: 600;
+        @include g.mq(md) {
+            font-size: 1.8rem;
+            width: 240px;
+            height: 80px;
+            line-height: 80px;
+        }
+        @include g.mq(sm) {
+            font-size: 1.2rem;
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+
+        }
     }
     &__char {
         position: relative;
@@ -54,5 +73,12 @@
         font-size: 1.6rem;
         margin-top: 46px;
         letter-spacing: calc(21 / 16);
+        @include g.mq(md) {
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+        @include g.mq(sm) {
+            margin-top: 20px;
+        }
     }
 }

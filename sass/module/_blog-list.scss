@@ -1,18 +1,26 @@
 @use "../global" as g;
 
-.blog-list{
-    &__inner{
+.blog-list {
+    &__inner {
         padding-top: 63px;
     }
-    &__title{
+    &__title {
         @include g.titleFont();
         color: g.$secondary-color;
         text-align: center;
     }
-    &__items{
+    &__items {
         margin-top: 53px;
     }
-    &__item{
+    &__item {
         margin-top: 61px;
+        @include g.mq(md) {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #f0f0f0;
+        }
+        @include g.mq(sm) {
+            margin-top: 30px;
+        }
     }
 }

@@ -2,17 +2,36 @@
 
 .news-item {
     height: 64px;
-    line-height: 64px;
     font-size: 1.6rem;
     border-bottom: 1px solid #D5D5D5;
-
+    position: relative;
     &__atag{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
         display: flex;
+        @include g.mq(md) {
+            flex-direction: column;
+        }
     }
     &__date{
-        margin-right: 52px;
+        min-width: 86px;
+        margin-right: 5%;
+        @include g.mq(md) {
+            font-size: 1.2rem;
+        }    
+        @include g.mq(sm) {
+            font-size: 1.0rem;
+        }
     }
     &__title{
         text-decoration: underline;
+        @include g.mq(md) {
+            margin-top: 7px;
+        }
+        @include g.mq(sm) {
+            font-size: 1.2rem;
+        }
     }
 }

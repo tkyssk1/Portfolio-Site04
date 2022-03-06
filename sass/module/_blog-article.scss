@@ -21,9 +21,15 @@
     }
     &__sms {
         display: flex;
+        @include g.mq(md) {
+            font-size: 1.0rem;
+        }
     }
     &__date {
         font-size: 1.6rem;
+        @include g.mq(md) {
+            font-size: 1.2rem;
+        }
     }
     &__img-block {
         margin-top: 22px;
@@ -31,7 +37,6 @@
         height: auto;
     }
     &__img{
-        height: 370px;
     }
 
     // フォント指定
@@ -39,6 +44,9 @@
         font-size: 2.8rem;
         font-weight: 600;
         color: g.$main-font-color;
+        @include g.mq(md) {
+            font-size: 2.0rem;
+        }
     }
 
     h2 {
@@ -47,6 +55,11 @@
         color: g.$main-font-color;
         margin-top: 45px;
         margin-bottom: 23px;
+        @include g.mq(md) {
+            font-size: 1.8rem;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
     }
     h3 {
         font-size: 2.2rem;
@@ -56,6 +69,11 @@
         padding-left: 10px;
         margin-top: 45px;
         margin-bottom: 23px;
+        @include g.mq(md) {
+            font-size: 1.6rem;
+            margin-top: 35px;
+            margin-bottom: 15px;    
+        }
     }
 
     p {
@@ -64,10 +82,16 @@
         margin-top: 10px;
         margin-bottom: 10px;
         line-height: calc(24 / 16);
+        @include g.mq(md) {
+            font-size: 1.2rem;
+        }
         a {
             text-decoration: underline;
             color: g.$primary-color;
             font-size: 1.8rem;
+            @include g.mq(md) {
+                font-size: 1.4rem;
+            }    
         }
     }
 
@@ -101,6 +125,9 @@
         padding-left: 35px;
         font-size: 1.6rem;
         line-height: calc(24 / 16);
+        @include g.mq(md) {
+            font-size: 1.2rem;
+        }
         &:before {
             content: "";
             background-color: g.$primary-color;

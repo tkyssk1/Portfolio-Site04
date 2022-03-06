@@ -18,6 +18,9 @@
         font-size: 1.6rem;
         font-weight: 600;
         margin-top: 8px;
+        @include g.mq(md) {
+            font-size: 1.2rem;
+        }
         &:first-of-type{
             margin-top: 0;
         }
@@ -32,7 +35,7 @@
             border-radius: 50%;
             position: absolute;
             top: 50%;
-            left: 6%;
+            left: 2%;
             transform: translateY(-50%);
         }
     }

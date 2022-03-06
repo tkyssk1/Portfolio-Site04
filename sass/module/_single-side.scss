@@ -3,4 +3,7 @@
 .single-side{
         max-width: 270px;
         width: 100%;
+        @include g.mq(md) {
+                max-width: 590px;
+        }
 }

@@ -13,5 +13,8 @@
         line-height: calc(24 / 12);
         width: calc(152 / 270) * 100%;
         font-size: 1.2rem;
+        text-decoration: underline;
+        @include g.mq(md) {
+        }
     }
 }

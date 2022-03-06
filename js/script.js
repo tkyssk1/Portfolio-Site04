@@ -6,15 +6,17 @@ jQuery(function ($) {
     var win = $(window),
         // first viewの高さ取得
         fvHeight = $(".fv").height(),
+        // windowの高さ取得
+        winHeight = win.height(),
         scr = 0;
 
     //スクロール時
     win.on("scroll load resize", function () {
         scr = win.scrollTop();
         //値のテスト用
-        console.log(fvHeight);
+        console.log(winHeight);
         //fv通過時
-        if (scr > fvHeight) {
+        if (scr > winHeight) {
             $(".header").addClass("header--bg-change");
         } else {
             $(".header").removeClass("header--bg-change");
@@ -35,5 +37,12 @@ jQuery(function ($) {
         $(this).toggleClass("accordion__title--open");
         $(this).next(".accordion__text").slideToggle();
     })
+
+    // スクロールヒント 
+    new ScrollHint('.js-scrollable', {
+        i18n: {
+            scrollable: 'スクロールできます'
+        }
+    });
 
 });

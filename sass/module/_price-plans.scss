@@ -1,6 +1,7 @@
 @use "../global" as g;
 
 .price-plans{
+    width: 900px;
     &__plan{
         margin-right: 7px;
         &:last-of-type{
