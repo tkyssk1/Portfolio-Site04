@@ -18,7 +18,7 @@
         left: 50%;
         // transformを使っているとスタックコンテキストが発動
         transform: translate(-50%, -50%);
-        // そのため、z-indexをbg-coverより大きく設定
+        // そのため、bg-coverのz-index(10)より大きく設定
         z-index: 20;
         max-width: 1280px;
         width: 100%;
@@ -44,23 +44,63 @@
     }
     &__right {
         display: flex;
+        align-items: center;
         @include g.mq(lg) {
-            display: none;
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: 80px;
+            right: -50%;
+            transform: translate(50%, 0px);
+        }
+        &--open {
+            right: 25%;
+            visibility: visible;
+            transition: 0.4s;
+            opacity: 0.9;
         }
     }
     &__right-info {
         padding-right: 13px;
         text-align: right;
+        @include g.mq(lg) {
+            padding-right: 0px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
     }
     &__hours {
         padding-top: 12px;
         font-size: 1.2rem;
+        @include g.mq(lg) {
+            padding-top: 0;
+            font-size: 1.4rem;
+        }
     }
     &__tel {
         padding-top: 7px;
         font-weight: 600;
+        @include g.mq(lg) {
+            font-size: 1.8rem;
+        }
+    }
+    &__right-btn{
+        display: flex;
+        align-items: center;
+        @include g.mq(md) {
+            flex-direction: column;
+        }
     }
     &__btn {
-        margin-left: 13px;
+        margin-left: 40px;
+        &:first-of-type{
+            margin-left: 0;
+        }
+        @include g.mq(md) {
+            margin-left: 0px;
+            &:last-of-type{
+                margin-top: 10px;
+            }
+        }
     }
 }

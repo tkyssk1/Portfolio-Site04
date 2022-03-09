@@ -566,26 +566,76 @@ a {
 }
 .header__right {
   display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1024px) {
   .header__right {
-    display: none;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 80px;
+    right: -50%;
+    transform: translate(50%, 0px);
   }
+}
+.header__right--open {
+  right: 25%;
+  visibility: visible;
+  transition: 0.4s;
+  opacity: 0.9;
 }
 .header__right-info {
   padding-right: 13px;
   text-align: right;
 }
+@media screen and (max-width: 1024px) {
+  .header__right-info {
+    padding-right: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
 .header__hours {
   padding-top: 12px;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 1024px) {
+  .header__hours {
+    padding-top: 0;
+    font-size: 1.4rem;
+  }
 }
 .header__tel {
   padding-top: 7px;
   font-weight: 600;
 }
+@media screen and (max-width: 1024px) {
+  .header__tel {
+    font-size: 1.8rem;
+  }
+}
+.header__right-btn {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header__right-btn {
+    flex-direction: column;
+  }
+}
 .header__btn {
-  margin-left: 13px;
+  margin-left: 40px;
+}
+.header__btn:first-of-type {
+  margin-left: 0;
+}
+@media screen and (max-width: 767px) {
+  .header__btn {
+    margin-left: 0px;
+  }
+  .header__btn:last-of-type {
+    margin-top: 10px;
+  }
 }
 
 .header-nav__items {
@@ -605,7 +655,7 @@ a {
     transition: 0.5s;
     opacity: 0;
     top: 0;
-    right: -70%;
+    right: -50%;
     width: 50%;
     height: 100vh;
     display: block;
@@ -614,20 +664,20 @@ a {
   }
   .header-nav__items {
     position: absolute;
-    top: 50%;
+    top: 340px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     flex-direction: column;
     width: 100%;
   }
   .header-nav__item {
-    height: 80px;
-    line-height: 80px;
+    height: 70px;
+    line-height: 70px;
     background-color: #1B224C;
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-right: 0px;
-    font-size: 2.6rem;
+    font-size: 2rem;
   }
   .header-nav__link {
     display: block;
@@ -656,7 +706,6 @@ a {
     border-radius: 50%;
     margin-right: 20px;
     position: relative;
-    z-index: 30;
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 767px) {
@@ -2761,6 +2810,22 @@ a {
 }
 .btn--secondary-color {
   background-color: #1B224C;
+}
+@media screen and (max-width: 1024px) {
+  .btn--hamburger {
+    width: 180px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 374px) {
+  .btn--hamburger {
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+  }
 }
 .btn--submit {
   background-color: #1B224C;
