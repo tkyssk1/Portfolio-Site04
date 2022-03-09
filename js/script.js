@@ -28,6 +28,16 @@ jQuery(function ($) {
         $("body").toggleClass("noscroll");
         $(".bg-cover").toggleClass("bg-cover--open");
         $(".header-nav").toggleClass("header-nav--open");
+        $(".header__right").toggleClass("header__right--open");
+        $(".header__btn").toggleClass("header__btn--open");
+        $(".hamburger-btn").toggleClass("hamburger-btn--open");
+    })
+    // 黒い背景押下
+    $(".bg-cover").on("click", function () {
+        $("body").toggleClass("noscroll");
+        $(".bg-cover").toggleClass("bg-cover--open");
+        $(".header-nav").toggleClass("header-nav--open");
+        $(".header__right").toggleClass("header__right--open");
         $(".header__btn").toggleClass("header__btn--open");
         $(".hamburger-btn").toggleClass("hamburger-btn--open");
     })
